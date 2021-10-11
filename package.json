@@ -1,0 +1,17 @@
+{
+  "name": "pruebas-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-compile-dev": "sass -c --style=expanded --no-source-map styles/sass:styles/css",
+    "sass-watch-dev": "sass --watch -c --style=expanded --no-source-map styles/sass:styles/css",
+    "sass-compile-prod": "sass --style=compressed styles/sass:styles/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.39.0"
+  }
+}

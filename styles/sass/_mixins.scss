@@ -1,0 +1,25 @@
+@mixin setFontColor($color: yellow) {
+  color: $color;
+}
+
+@mixin setFontSize {
+  font-size: 2rem;
+}
+
+@mixin border-RadiusTopBottom($top, $bottom) {
+  -webkit-border-radius: $top;
+  -webkit-border-bottom-right-radius: $bottom;
+  -webkit-border-bottom-left-radius: $bottom;
+  -moz-border-radius: $top;
+  -moz-border-radius-bottomright: $bottom;
+  -moz-border-radius-bottomleft: $bottom;
+  border-radius: $top;
+  border-bottom-right-radius: $bottom;
+  border-bottom-left-radius: $bottom;
+}
+
+@mixin setAlign($align) {
+  @if $align == "center" {
+    text-align: center;
+  }
+}

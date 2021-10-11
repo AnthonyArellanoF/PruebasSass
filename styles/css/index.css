@@ -1,0 +1,56 @@
+.red {
+  color: red;
+}
+
+.border {
+  border-radius: 10%;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+div {
+  width: 50%;
+}
+div p {
+  width: 50vw;
+  font-size: 2rem;
+}
+
+p.orange {
+  color: red;
+  -webkit-border-radius: 10px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius: 10px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-radius: 10px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+p.yellow {
+  color: yellow;
+}
+
+p {
+  color: red;
+  margin: 5%;
+  padding: 2.5%;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50vw;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: gray;
+  }
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-color: green;
+  }
+}

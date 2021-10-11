@@ -1,0 +1,47 @@
+@use 'colors';
+@use 'border';
+@use 'mixins' as *;
+
+$tablet-width: 1000px;
+
+body {
+  background-color: cadetblue;
+}
+
+div {
+  width: 50%;
+  p {
+    width: 50vw;
+    font-size: 2rem;
+  }
+}
+
+p.orange {
+  @include setFontColor(red);
+  @include border-RadiusTopBottom(10px, 15px);
+}
+
+p.yellow {
+  @include setFontColor();
+}
+
+p {
+  color: red;
+  margin: 5%;
+  padding: 2.5%;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50vw;
+}
+
+@media screen and (max-width: $tablet-width) {
+  body {
+    background-color: gray;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-color: green;
+  }
+}
